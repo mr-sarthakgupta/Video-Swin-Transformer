@@ -13,7 +13,7 @@ class Recognizer3D(BaseRecognizer):
         """Defines the computation performed at every call when training."""
 
         assert self.with_cls_head
-        imgs = imgs.reshape((-1, ) + imgs.shape[2:])
+        # imgs = imgs.reshape((-1, ) + imgs.shape[2:])
         losses = dict()
 
         x = self.extract_feat(imgs)
