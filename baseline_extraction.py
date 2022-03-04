@@ -1,5 +1,6 @@
 import warnings
 warnings.filterwarnings('ignore')
+!pip install pytorch-ignite
 from ignite.metrics import Accuracy, Loss
 from ignite.engine import Events, create_supervised_trainer, create_supervised_evaluator
 import torch.nn.functional as func
